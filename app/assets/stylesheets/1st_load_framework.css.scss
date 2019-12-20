@@ -37,6 +37,12 @@ img {
   @extend .table-bordered;
   @extend .table-hover;
   }
+
+.h1 {
+  @extend .mark;
+  @extend .lead;
+  @extend .text-left;
+  }
 // apply styles to HTML elements
 // to make views framework-neutral
 main {
