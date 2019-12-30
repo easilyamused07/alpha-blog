@@ -38,11 +38,41 @@ img {
   @extend .table-hover;
   }
 
+.jumbotron {
+  background-image: asset-url('african-lion.jpg');
+  background-size: cover;
+  height: 550px;
+  }	
+
+.jumbotron h1{
+  color: #ff6347;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: -1px;
+  font-weight: bold;
+  }
+
 .h1 {
   @extend .mark;
   @extend .lead;
   @extend .text-left;
   }
+
+.footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+
+.footer small {
+  float: left;
+}
+
+.footer ul {
+  float: right;
+  list-style: none;
+}
 // apply styles to HTML elements
 // to make views framework-neutral
 main {
