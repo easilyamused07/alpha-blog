@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-  
+
   before_action :set_article, only: [:edit, :update, :show, :destroy]
 
   def index
@@ -42,7 +42,7 @@ class ArticlesController < ApplicationController
     @article.destroy
 
     redirect_to articles_path
-    flash[:notice] = "Article was successfully deleted."
+    flash[:danger] = "Article was successfully deleted."
   end
 
   private
