@@ -23,6 +23,12 @@ class CategoriesController < ApplicationController
     end
   end
 
+  def destroy
+    @category.destroy
+    redirect_to category_path
+    flash[:danger] = "You have successfully deleted selected category"
+  end
+
   private
   def category_params
     params.require(:category).permit(:name)
@@ -34,5 +40,5 @@ class CategoriesController < ApplicationController
       redirect_to categories_path
     end
   end
-  
+
 end
