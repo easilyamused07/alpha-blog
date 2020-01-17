@@ -17,8 +17,8 @@
       <ul class="nav navbar-nav navbar-right">
         <% if logged_in? %>
           <li><%= link_to "Create New Article", new_article_path %></li>
-          <button class="btn btn-outline-danger navbar-btn">
-            <%= link_to 'Logout', logout_path, method: :delete %></button>
+	  <button class="btn btn-outline-danger navbar-btn">
+			  <%= link_to 'Logout', logout_path, method: :delete %></button>
           <li class="dropdown">
             <a href='#' class="dropdown-toggle" data-toggle="dropdown"
             role="button" aria-haspopup="true" aria-expanded="false">Your
